@@ -1,0 +1,62 @@
+{
+    "title": "Hello I'm Abouzar Soleymani",
+    "subtitle": "Innovative, creative and a proven team player, I possess a Tech Degree in Front End Development and have 3 years building developing and managing websites, applications and programs for various companies. I seek to secure the position of Senior Front End Developer with Orbits International and hope to share my skills, expertise and experience with your team and valuable clients",
+    "links": {
+        "github": {"url": "https://github.com/abouzarSoleymani/","bgColor":"#ff5a01"},
+        "linkedin":{"url": "https://ir.linkedin.com › abouzar-soleymani-67291599","bgColor":"#0077b5"},
+        "email":{"url": "iras.user@gmail.com","bgColor":"#0077b5"}
+    },
+    "sections": [
+            {
+                "title": "WORK EXPERIENCE",
+                "items": [
+                    {
+                        "type": "p",
+                        "title": "",
+                        "content": "dsadasdsadadadasdasdadadasd dsadasdsadadadasdasdadadasd dsadasdsadadadasdasdadadasd"
+                    }
+                ]
+            },
+            {
+                "title": "Skills",
+                "items": [
+                    {
+                        "type": "card",
+                        "content": {
+                            "image": "React-js.png",
+                            "title": "React"
+                        }
+                    },
+                    {
+                        "type": "card",
+                        "content": {
+                            "image": "Angular.svg",
+                            "title": "Angular"
+                        }
+                    },
+                    {
+                        "type": "card",
+                        "content": {
+                            "image": "Javascript.png",
+                            "title": "Javascript"
+                        }
+                    },
+                    {
+                        "type": "card",
+                        "content": {
+                            "image": "HTML-5.png",
+                            "title": "Html"
+                        }
+                    },
+                    {
+                        "type": "card",
+                        "content": {
+                            "image": "CSS-3.png",
+                            "title": "CSS"
+                        }
+                    }
+                ]
+            }        
+    ]
+
+}

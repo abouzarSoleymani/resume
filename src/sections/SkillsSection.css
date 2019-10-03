@@ -1,0 +1,107 @@
+.third{
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, #3f6e79 0%, #0f0e16  100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #3f6e79), color-stop(100%, #0f0e16));
+    background: -webkit-radial-gradient(center, ellipse cover, #3f6e79 0%,  #0f0e16 100%);
+    background: -o-radial-gradient(center, ellipse cover, #3f6e79 0%,  #0f0e16 100%);
+    background: -ms-radial-gradient(center, ellipse cover, #3f6e79 0%,  #0f0e16 100%);
+    background: radial-gradient(ellipse at center, #3f6e79 0%, #0f0e16 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8aee8', GradientType=1 );
+  }
+  .skills-title{
+      font-size: 36px;
+      color: white;
+      padding: 30px;
+  }
+  .skills{
+      color:white;
+      font-size: 14px;
+  }
+  .line{
+    padding-bottom: 10px;
+  }
+  .cards-wrapper{
+    position: relative;
+    display: flex;
+  }
+  .card{
+    display: flex;
+    height: 280px;
+    width: 200px;
+    background-color: #17141d;
+    border-radius: 10px;
+    box-shadow: -1rem 0 3rem #000;
+    transition: 0.4s ease-out;
+    position: relative;
+    left: 0px;
+  }
+
+.image-wrapper{
+    width: 110px;
+    height: 90px;
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 80px;
+    left: 42px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+.card:not(:first-child) {
+    margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover ~ .card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.skill-title {
+  color: white;
+  font-weight: 300;
+  position: absolute;
+  left: 89px;
+  top: 26px;    
+}
+
+.bar {
+  position: absolute;
+  top: 218px;
+  left: 22px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: rgb(0,154,217);
+  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 100px;
+  transition: 0.4s ease-out;
+}
+
+

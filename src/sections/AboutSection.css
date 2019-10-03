@@ -1,0 +1,86 @@
+
+.two{
+    background: rgba(255,255,255,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(100%, rgba(138,191,255,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8abfff', GradientType=1 );
+  }
+  
+.experiences{
+    padding-left: 15px;
+    margin-top: -1px;
+}
+.experiences li {
+    list-style: none;
+}
+.experiences .exp-detail div {
+    padding: 5px;
+}
+.where{
+        font-size: 1.2857em; /* 18/16 -> 18px */
+        font-weight: 300;
+        display: inline;
+        margin-right: 0.5em;
+}
+.when{
+        font-size: 0.75em; /* 12/16 -> 12px */
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #444444;
+        display: inline-block;
+        padding: 0 12px;
+        margin: -5px 0.5em 0 0 !important;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+}
+
+.experiences li {
+    position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
+    /* use padding-bottom instead of margin-bottom.*/ 
+    margin-bottom: 0; /* This overrides previously specified margin-bottom */
+    padding-bottom: 2.5em;
+}
+
+
+.experiences li:after {
+    /* bullets */
+    content: '\25CF';
+    font-size: 38px;
+    color:cadetblue;
+    position: absolute;
+    left: -28px;
+    top: -17px;
+}
+
+.experiences li:before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: -19px;
+    top: 12px;
+    border-width: 3px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        #383a3a, 
+        rgba(0, 0, 0, 0)
+      ) 1 100%;
+    height: 100%;
+}
+
+.experiences li:first-child:before {
+   /* first li's line */
+   top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
+}
+
+.experiences li:last-child:before {
+    /* last li's line */
+   height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
