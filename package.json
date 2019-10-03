@@ -2,13 +2,19 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://abouzarSoleymani.github.io/resume",
   "dependencies": {
+    "add": "^2.0.6",
+    "gh-pages": "^2.1.1",
+    "global": "^4.4.0",
     "json-loader": "^0.5.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-scripts": "3.1.2"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

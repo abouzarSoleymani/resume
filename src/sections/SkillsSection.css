@@ -7,6 +7,7 @@
     background: -ms-radial-gradient(center, ellipse cover, #3f6e79 0%,  #0f0e16 100%);
     background: radial-gradient(ellipse at center, #3f6e79 0%, #0f0e16 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8aee8', GradientType=1 );
+    height: 100%;
   }
   .skills-title{
       font-size: 36px;

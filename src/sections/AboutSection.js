@@ -7,9 +7,9 @@ class AboutSection extends Component {
     render(){
         return(
                 <Fullpage className="two">
-                    <h3>
+                    <div className="experrience-title">
                         {data.sections[0].title}
-                    </h3>
+                    </div>
                     <ul className="experiences">
                     <li className="exp-detail">
                         <div className="where">video and photography and User interface design</div>

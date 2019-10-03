@@ -8,11 +8,26 @@
     background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
     background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8abfff', GradientType=1 );
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
   }
-  
+ .experrience-title{
+     display: flex;
+     font-size: 18px;
+     color: black;
+     flex-direction: row;
+     justify-content: center;
+     margin-bottom: 10px;
+ } 
 .experiences{
+    display: flex;
+    flex-direction: column;
     padding-left: 15px;
     margin-top: -1px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .experiences li {
     list-style: none;
