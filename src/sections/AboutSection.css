@@ -8,12 +8,17 @@
     background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
     background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(138,191,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#8abfff', GradientType=1 );
+    text-align: center;
+    overflow: auto;
+  }
+  .experiences{
+    min-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100%;
+    overflow: auto;
   }
- .experrience-title{
+ .exp-title{
      display: flex;
      font-size: 18px;
      color: black;
@@ -21,7 +26,7 @@
      justify-content: center;
      margin-bottom: 10px;
  } 
-.experiences{
+.exp-ul{
     display: flex;
     flex-direction: column;
     padding-left: 15px;
@@ -29,11 +34,14 @@
     flex-wrap: wrap;
     justify-content: center;
 }
-.experiences li {
+.exp-ul li {
     list-style: none;
 }
-.experiences .exp-detail div {
+.exp-ul .exp-detail div {
     padding: 5px;
+}
+.what{
+    font-size: 1.1em;
 }
 .where{
         font-size: 1.2857em; /* 18/16 -> 18px */
@@ -55,7 +63,7 @@
         border-radius: 3px;
 }
 
-.experiences li {
+.exp-ul li {
     position:relative; /* so that pseudoelements are positioned relatively to their "li"s*/
     /* use padding-bottom instead of margin-bottom.*/ 
     margin-bottom: 0; /* This overrides previously specified margin-bottom */
@@ -63,7 +71,7 @@
 }
 
 
-.experiences li:after {
+.exp-ul li:after {
     /* bullets */
     content: '\25CF';
     font-size: 38px;
@@ -73,7 +81,7 @@
     top: -17px;
 }
 
-.experiences li:before {
+.exp-ul li:before {
     /* lines */
     content:"";
     position: absolute;
@@ -90,12 +98,63 @@
     height: 100%;
 }
 
-.experiences li:first-child:before {
+.exp-ul li:first-child:before {
    /* first li's line */
    top: 6px; /* moves the line down so that it disappears under the bullet. Adjust manually */
 }
 
-.experiences li:last-child:before {
+.exp-ul li:last-child:before {
     /* last li's line */
    height: 6px; /* shorten the line so it goes only up to the bullet. Is equal to first-child:before's top */
+}
+@media(max-width: 768px){
+    .exp-title{
+        font-size: 14px;
+    }
+    .where{
+        font-size: 1em;
+    }
+    .what{
+        font-size: .9em;
+    }
+    .when{
+        font-size: 0.55em;
+    }
+    .exp-ul li:after {
+        font-size: 28px;
+    }
+}
+@media(max-width: 480px){
+    .exp-title{
+        font-size: 12px;
+    }
+    .where{
+        font-size: 0.8em;
+    }
+    .what{
+        font-size: .7em;
+    }
+    .when{
+        font-size: 0.45em;
+    }
+    .exp-ul li:after {
+        font-size: 18px;
+    }
+}
+@media(max-width: 321px){
+    .exp-title{
+        font-size: 10px;
+    }
+    .where{
+        font-size: 0.6em;
+    }
+    .what{
+        font-size: .5em;
+    }
+    .when{
+        font-size: 0.35em;
+    }
+    .exp-ul li:after {
+        font-size: 12px;
+    }
 }

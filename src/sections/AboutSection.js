@@ -7,10 +7,11 @@ class AboutSection extends Component {
     render(){
         return(
                 <Fullpage className="two">
-                    <div className="experrience-title">
+                <div className="experiences">
+                    <div className="exp-title">
                         {data.sections[0].title}
                     </div>
-                    <ul className="experiences">
+                    <ul className="exp-ul">
                     <li className="exp-detail">
                         <div className="where">video and photography and User interface design</div>
                         <div className="when">2015–2017</div>
@@ -36,6 +37,7 @@ class AboutSection extends Component {
                         <div className="what">frontEnd project: angular developer</div>
                     </li>
                     </ul>
+                    </div>
                 </Fullpage>
         )
     }

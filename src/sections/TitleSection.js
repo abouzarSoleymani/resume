@@ -10,7 +10,7 @@ class TitleSection extends Component {
                 <Fullpage className="one">
                 <div className="title-text">
                 <div className="title-img">
-                <img src={require('../assets//images/js.png')}/>
+                <img src={require('../assets//images/js.png')} alt=''/>
                 </div>
                 <h1 className="title"> 
                     {data.title}

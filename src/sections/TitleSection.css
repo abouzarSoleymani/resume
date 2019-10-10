@@ -7,6 +7,7 @@
     background: -ms-radial-gradient(center, ellipse cover, rgba(105,105,105,1) 0%, rgba(41,42,43,1) 100%);
     background: radial-gradient(ellipse at center, rgba(105,105,105,1) 0%, rgba(41,42,43,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696969', endColorstr='#292a2b', GradientType=1 );
+    overflow: auto;
   }
   .title{
     font: 90px/1.1em 'opensans-bold', sans-serif;
@@ -54,4 +55,13 @@
     -o-transition: all 0.2s ease-in !important;
     -webkit-transition: all 0.2s ease-in !important;
     transition: all 0.2s ease-in !important;
+  }
+  @media(max-width: 768px){
+    .title{
+      font: 40px/1.1em 'opensans-bold', sans-serif;
+    }
+    .subtitle{
+      font: 16px/1.9em 'librebaskerville-regular', serif;
+      color: #f4f4f4;
+    }
   }
