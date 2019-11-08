@@ -8,6 +8,7 @@
   background: radial-gradient(ellipse at center, #3f6e79 0%, #0f0e16 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8aee8', GradientType=1 );
   overflow: auto;
+  position: relative;
 }
 .skills-title{
     font-size: 36px;
@@ -171,4 +172,19 @@ transition: 0.4s ease-out;
   .card{
     box-shadow: -1rem 0 1rem #000;
   }
+}
+.third  a {
+display: flex;
+position: absolute;
+bottom: 10px;
+left: 50%;
+z-index: 2;
+display: inline-block;
+-webkit-transform: translate(0, -50%);
+transform: translate(0, -50%);
+color: #fff;
+font: normal 400 20px/1 'Josefin Sans', sans-serif;
+letter-spacing: .1em;
+text-decoration: none;
+transition: opacity .3s;
 }

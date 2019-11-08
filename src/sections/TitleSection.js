@@ -3,8 +3,19 @@ import { SocialIcon } from 'react-social-icons';
 import Fullpage from '../components/Fullpage';
 import data from '../data.json';
 import './TitleSection.css';
+import ScrollBottm from '../components/ScrollBottom';
 
 class TitleSection extends Component {
+    constructor(){
+        super()
+        this.state = {
+            activeSection: null
+        }
+        this.handleItemClick = this.handleItemClick.bind(this);
+    }
+    handleItemClick(title) {
+        this.setState({activeSection: title});
+    }
     render(){
         return(
                 <Fullpage className="one">
@@ -17,7 +28,7 @@ class TitleSection extends Component {
                 </h1>
                 <div className="subtitle">{data.subtitle}</div>
                 </div>
-                <hr class="line"></hr>
+                <hr className="line"></hr>
                     <div className="icon-wraper">
                     {
                         Object.keys(data.links).map(key =>{
@@ -31,6 +42,9 @@ class TitleSection extends Component {
                         )
                     }
                     </div>
+                    <a onClick={() => this.handleItemClick('experiences')}>
+                    <ScrollBottm el={this.state.activeSection}/>
+                    </a>
                 </Fullpage>
         )
     }

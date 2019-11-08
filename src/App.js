@@ -1,17 +1,24 @@
 import React from 'react';
 import './App.css';
 import TitleSection from './sections/TitleSection';
-import AboutSection from './sections/AboutSection';
+import ExperiencesSection from './sections/ExperiencesSection';
 import SkillsSection from './sections/SkillsSection';
+import Header from './components/Header';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function App() {
   return (
     <div className="App">
-      <div className="navigation">
-      </div>
-      <TitleSection/>
-      <AboutSection/>
-      <SkillsSection/>
+      <Header/>
+      <Element name="title" className="element">
+        <TitleSection/>
+      </Element>
+      <Element name="experiences" className="element">
+         <ExperiencesSection/>
+      </Element>
+      <Element name="skils" className="element">
+         <SkillsSection/>
+        </Element>
     </div>
   );
 }

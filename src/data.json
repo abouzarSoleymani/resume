@@ -11,9 +11,19 @@
                 "title": "WORK EXPERIENCE",
                 "items": [
                     {
-                        "type": "p",
-                        "title": "",
-                        "content": ""
+                        "where": "video and photography and User interface design",
+                        "when": "2015–2017",
+                        "what": ["photoshop", "Illustrator", "Adobe XD", "premiere", "afterEffect"]
+                    },
+                    {
+                        "where": "fanavaSystem",
+                        "when": "05/2017–07/2018",
+                        "what": ["j2ee , smartClient framework, oracle, and ui developer", "java developer :", "project :", "sahabcard.ir", "ERP (fanavaGroup)"]
+                    },
+                    {
+                        "where": "emdadKhodro",
+                        "when": "09/2018",
+                        "what": ["UI/UX website emdadkhodro 096440.com", "frontEnd project: angular developer"]
                     }
                 ]
             },
@@ -54,6 +64,24 @@
                             "image": "CSS-3.png",
                             "title": "CSS"
                         }
+                    },{
+                        "type":"list",
+                        "items": [
+                            "HTML5 and CSS3,LESS or SASS" ,
+                            "Bootstrap 3/4",
+                            "user interface and user experience" ,
+                            "Angular 6/7 Typescript SPA, ES6 , rxjs.",
+                            "Source control Git and SVN",
+                            "jQuery, JSON, AJAX and DOM scripting to create interactive web applications.",
+                            "Experience in making Responsive Web Pages using Media Queries and Bootstrap, Material Design",
+                            "lite for styling mobile applications.",
+                            "problem solving skill",
+                            "Database: oracle",
+                            "Experience of PWA (progressive web app) , Cordova",
+                            "Knowledge of Node js , Express js , MongoDB",
+                            "Experience with IDE’s such as Visual Studio Code, Web Strom, intellij, myeclipse and Eclipse.",
+                            "Experience in working on Windows, and Linux - Ubuntu operating systems." 
+                        ]
                     }
                 ]
             }        

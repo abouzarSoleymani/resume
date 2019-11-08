@@ -8,6 +8,8 @@
     background: radial-gradient(ellipse at center, rgba(105,105,105,1) 0%, rgba(41,42,43,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#696969', endColorstr='#292a2b', GradientType=1 );
     overflow: auto;
+    position: relative;
+
   }
   .title{
     font: 90px/1.1em 'opensans-bold', sans-serif;
@@ -65,3 +67,18 @@
       color: #f4f4f4;
     }
   }
+
+.one a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  color: #fff;
+  font: normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+}
